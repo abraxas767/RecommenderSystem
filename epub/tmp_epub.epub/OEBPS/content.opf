@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<package xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="id">
+  <metadata>
+    <dc:rights>Public domain in the USA.</dc:rights>
+    <dc:identifier opf:scheme="URI" id="id">http://www.gutenberg.org/66742</dc:identifier>
+    <dc:creator opf:file-as="Blommaert, W.">W. Blommaert</dc:creator>
+    <dc:creator opf:file-as="Gie, S. F. N. (Stefanus François Naudé)">S. F. N. Gie</dc:creator>
+    <dc:title>Uit ou Reisbeskrywinge: Dagverhale en ander letterkundige bronne oor die Kaap</dc:title>
+    <dc:language xsi:type="dcterms:RFC4646">af</dc:language>
+    <dc:language xsi:type="dcterms:RFC4646">nl</dc:language>
+    <dc:subject>Cape of Good Hope (South Africa) -- Description and travel</dc:subject>
+    <dc:subject>Cape of Good Hope (South Africa) -- History -- Sources</dc:subject>
+    <dc:date opf:event="publication">2021-11-15</dc:date>
+    <dc:date opf:event="conversion">2023-07-28T14:36:02.289642+00:00</dc:date>
+    <dc:source>https://www.gutenberg.org/files/66742/66742-h/66742-h.htm</dc:source>
+    <meta name="cover" content="id-4273162654120157847"/>
+  </metadata>
+  <manifest>
+    <!--Image: 499 x 720 size=62391 q=50-->
+    <item href="3206850789384084245_frontcover.jpg" id="id-4273162654120157847" media-type="image/jpeg"/>
+    <item href="pgepub.css" id="item1" media-type="text/css"/>
+    <item href="0.css" id="item2" media-type="text/css"/>
+    <!--Chunk: size=10984 Split on div.body-->
+    <item href="5740708827384588468_66742-h-0.htm.html" id="pg-header" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=22362 Split on div.chapter-->
+    <item href="5740708827384588468_66742-h-1.htm.html" id="ch1" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=35121 Split on div.chapter-->
+    <item href="5740708827384588468_66742-h-2.htm.html" id="ch2" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=28587 Split on div.chapter-->
+    <item href="5740708827384588468_66742-h-3.htm.html" id="ch3" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=59350 Split on div.chapter-->
+    <item href="5740708827384588468_66742-h-4.htm.html" id="ch4" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=24333 Split on div.chapter-->
+    <item href="5740708827384588468_66742-h-5.htm.html" id="ch5" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=45565 Split on div.chapter-->
+    <item href="5740708827384588468_66742-h-6.htm.html" id="ch6" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=35102 Split on div.chapter-->
+    <item href="5740708827384588468_66742-h-7.htm.html" id="ch7" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=22176 Split on div.div1-->
+    <item href="5740708827384588468_66742-h-8.htm.html" id="ch8" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=70201 Split on div.footnotes-->
+    <item href="5740708827384588468_66742-h-9.htm.html" id="item3" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=33335-->
+    <item href="5740708827384588468_66742-h-10.htm.html" id="item4" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=44418 Split on div.chapter-->
+    <item href="5740708827384588468_66742-h-11.htm.html" id="ch10" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=17867-->
+    <item href="5740708827384588468_66742-h-12.htm.html" id="ch11" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=11900 Split on div.section-->
+    <item href="5740708827384588468_66742-h-13.htm.html" id="item5" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=19832-->
+    <item href="5740708827384588468_66742-h-14.htm.html" id="pg-footer" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="wrap0000.html" id="coverpage-wrapper" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="coverpage-wrapper" linear="yes"/>
+    <itemref idref="pg-header" linear="yes"/>
+    <itemref idref="ch1" linear="yes"/>
+    <itemref idref="ch2" linear="yes"/>
+    <itemref idref="ch3" linear="yes"/>
+    <itemref idref="ch4" linear="yes"/>
+    <itemref idref="ch5" linear="yes"/>
+    <itemref idref="ch6" linear="yes"/>
+    <itemref idref="ch7" linear="yes"/>
+    <itemref idref="ch8" linear="yes"/>
+    <itemref idref="item3" linear="yes"/>
+    <itemref idref="item4" linear="yes"/>
+    <itemref idref="ch10" linear="yes"/>
+    <itemref idref="ch11" linear="yes"/>
+    <itemref idref="item5" linear="yes"/>
+    <itemref idref="pg-footer" linear="yes"/>
+  </spine>
+  <guide>
+    <reference type="toc" title="INHOUD." href="5740708827384588468_66742-h-0.htm.html#pgepubid00001"/>
+    <reference type="cover" title="Cover" href="wrap0000.html"/>
+  </guide>
+</package>

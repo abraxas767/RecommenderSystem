@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx version="2005-1" xml:lang="af" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+<head>
+<meta content="http://www.gutenberg.org/66742" name="dtb:uid"/>
+<meta content="3" name="dtb:depth"/>
+<meta content="Ebookmaker 0.12.34 by Project Gutenberg" name="dtb:generator"/>
+<meta content="0" name="dtb:totalPageCount"/>
+<meta content="0" name="dtb:maxPageNumber"/>
+</head>
+<docTitle>
+<text>Uit ou Reisbeskrywinge: Dagverhale en ander letterkundige bronne oor die Kaap</text>
+</docTitle>
+<navMap>
+<navPoint id="np-1" playOrder="1">
+<navLabel>
+<text>VOORWOORD.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-0.htm.html#pgepubid00000"/>
+</navPoint>
+<navPoint id="np-2" playOrder="12">
+<navLabel>
+<text>INHOUD.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-0.htm.html#pgepubid00001"/>
+</navPoint>
+<navPoint id="np-3" playOrder="23">
+<navLabel>
+<text>Die Dood van Francisco d’Almeida.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-1.htm.html#pgepubid00002"/>
+<navPoint id="np-4" playOrder="34">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-1.htm.html#pgepubid00003"/>
+</navPoint>
+<navPoint id="np-5" playOrder="45">
+<navLabel>
+<text>DIE DOOD VAN FRANCISCO D’ALMEIDA.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-1.htm.html#pgepubid00004"/>
+</navPoint>
+</navPoint>
+<navPoint id="np-6" playOrder="48">
+<navLabel>
+<text>Verhaal van die Skipbreuk van die groot galjoen, Sint Johannes, by die Land van Natal in die jaar 1552.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-2.htm.html#pgepubid00005"/>
+<navPoint id="np-7" playOrder="49">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-2.htm.html#pgepubid00006"/>
+</navPoint>
+<navPoint id="np-8" playOrder="50">
+<navLabel>
+<text>VERHAAL VAN DIE SKIPBREUK VAN DIE GROOT GALJOEN, SINT JOHANNES, BY DIE LAND VAN NATAL IN DIE JAAR 1552.2</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-2.htm.html#pgepubid00007"/>
+</navPoint>
+</navPoint>
+<navPoint id="np-9" playOrder="51">
+<navLabel>
+<text>Monomotapa en Ofir.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-3.htm.html#pgepubid00008"/>
+<navPoint id="np-10" playOrder="2">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-3.htm.html#pgepubid00009"/>
+</navPoint>
+<navPoint id="np-11" playOrder="3">
+<navLabel>
+<text>MONOMOTAPA EN OFIR.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-3.htm.html#pgepubid00010"/>
+<navPoint id="np-12" playOrder="4">
+<navLabel>
+<text>1. Uit „Da Asia” van Joano de Barros4.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-3.htm.html#pgepubid00011"/>
+</navPoint>
+<navPoint id="np-13" playOrder="5">
+<navLabel>
+<text>2. Uit „Ethiopia Oriental” van Joano Dos Santos15.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-3.htm.html#pgepubid00012"/>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="np-14" playOrder="6">
+<navLabel>
+<text>Die Terugkeer van Jan Huygen van Linschoten.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-4.htm.html#pgepubid00013"/>
+<navPoint id="np-15" playOrder="7">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-4.htm.html#pgepubid00014"/>
+</navPoint>
+<navPoint id="np-16" playOrder="8">
+<navLabel>
+<text>DIE TERUGKEER VAN JAN HUYGEN VAN LINSCHOTEN.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-4.htm.html#pgepubid00015"/>
+</navPoint>
+</navPoint>
+<navPoint id="np-17" playOrder="9">
+<navLabel>
+<text>Die Eerste Nederlandse Vloot aan die Suid-Afrikaanse Kus.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-5.htm.html#pgepubid00016"/>
+<navPoint id="np-18" playOrder="10">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-5.htm.html#pgepubid00017"/>
+</navPoint>
+<navPoint id="np-19" playOrder="11">
+<navLabel>
+<text>DIE EERSTE NEDERLANDSE VLOOT AAN DIE SUID-AFRIKAANSE KUS.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-5.htm.html#pgepubid00018"/>
+<navPoint id="np-20" playOrder="13">
+<navLabel>
+<text>Cort verhaal van de Inwoonderen [bij] Aguado de Sambras.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-5.htm.html#pgepubid00019"/>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="np-21" playOrder="14">
+<navLabel>
+<text>Uit die Dagverhaal van Jan van Riebeeck.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-6.htm.html#pgepubid00020"/>
+<navPoint id="np-22" playOrder="15">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-6.htm.html#pgepubid00021"/>
+</navPoint>
+<navPoint id="np-23" playOrder="16">
+<navLabel>
+<text>UIT DIE DAGVERHAAL VAN JAN VAN RIEBEECK.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-6.htm.html#pgepubid00022"/>
+</navPoint>
+</navPoint>
+<navPoint id="np-24" playOrder="17">
+<navLabel>
+<text>Uit P. De Neyn se „Lust-Hof der Huwelyken.”</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-7.htm.html#pgepubid00023"/>
+<navPoint id="np-25" playOrder="18">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-7.htm.html#pgepubid00024"/>
+</navPoint>
+<navPoint id="np-26" playOrder="19">
+<navLabel>
+<text>DIE MOEILIKHEDE MET DIE GONJEMANS.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-7.htm.html#pgepubid00025"/>
+</navPoint>
+</navPoint>
+<navPoint id="np-27" playOrder="20">
+<navLabel>
+<text>Die Heldemoed van Jochem Willemszoon.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-8.htm.html#pgepubid00026"/>
+<navPoint id="np-28" playOrder="21">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-8.htm.html#pgepubid00027"/>
+</navPoint>
+<navPoint id="np-29" playOrder="22">
+<navLabel>
+<text>DIE HELDEMOED VAN JOCHEM WILLEMSZOON.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-8.htm.html#pgepubid00028"/>
+<navPoint id="np-30" playOrder="24">
+<navLabel>
+<text>EXTRACT uit de originele Missive door den Gouverneur Simon van der Stel en den Raad aan Cabo de Bonne Esperance aan de Heeren Zeventhienen in dato den 22sten Juni 1692 gezonden.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-8.htm.html#pgepubid00029"/>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="np-31" playOrder="25">
+<navLabel>
+<text>Die Rampspoedige Reis van die Gouden Buys.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-9.htm.html#pgepubid00030"/>
+<navPoint id="np-32" playOrder="26">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-9.htm.html#pgepubid00031"/>
+</navPoint>
+<navPoint id="np-33" playOrder="27">
+<navLabel>
+<text>DIE RAMPSPOEDIGE REIS VAN DIE GOUDEN BUYS.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-9.htm.html#pgepubid00032"/>
+<navPoint id="np-34" playOrder="28">
+<navLabel>
+<text>Verhaal van D. Silleman.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-9.htm.html#pgepubid00033"/>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="np-35" playOrder="29">
+<navLabel>
+<text>Uit Peter Kolbe se „Beschryving van De Kaap de Goede Hoop.”</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-11.htm.html#pgepubid00034"/>
+<navPoint id="np-36" playOrder="30">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-11.htm.html#pgepubid00035"/>
+</navPoint>
+<navPoint id="np-37" playOrder="31">
+<navLabel>
+<text>UIT PETER KOLBE SE „BESCHRYVING VAN DE KAAP DE GOEDE HOOP.”</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-11.htm.html#pgepubid00036"/>
+<navPoint id="np-38" playOrder="32">
+<navLabel>
+<text>Misdade van die Slawe.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-11.htm.html#pgepubid00037"/>
+</navPoint>
+<navPoint id="np-39" playOrder="33">
+<navLabel>
+<text>Oor die Gooi- en Skermkuns van die Hottentotte.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-11.htm.html#pgepubid00038"/>
+</navPoint>
+<navPoint id="np-40" playOrder="35">
+<navLabel>
+<text>Die Musiekkuns van die Hottentotte.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-11.htm.html#pgepubid00039"/>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="np-41" playOrder="36">
+<navLabel>
+<text>’n Leeu-awontuur uit Starrenburg se Joernaal.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-12.htm.html#pgepubid00040"/>
+<navPoint id="np-42" playOrder="37">
+<navLabel>
+<text>INLEIDING.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-12.htm.html#pgepubid00041"/>
+</navPoint>
+<navPoint id="np-43" playOrder="38">
+<navLabel>
+<text>’N LEEU-AWONTUUR UIT STARRENBURG SE JOERNAAL.</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-12.htm.html#pgepubid00042"/>
+</navPoint>
+</navPoint>
+<navPoint id="np-44" playOrder="39">
+<navLabel>
+<text>Kolofon</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-13.htm.html#pgepubid00043"/>
+<navPoint id="np-45" playOrder="40">
+<navLabel>
+<text>Beskikbaarheid</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-13.htm.html#pgepubid00044"/>
+</navPoint>
+<navPoint id="np-46" playOrder="41">
+<navLabel>
+<text>Metadata</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-13.htm.html#pgepubid00045"/>
+</navPoint>
+<navPoint id="np-47" playOrder="42">
+<navLabel>
+<text>Hersieningsgeskiedenis</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-13.htm.html#pgepubid00046"/>
+</navPoint>
+<navPoint id="np-48" playOrder="43">
+<navLabel>
+<text>Eksterne verwysings</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-13.htm.html#pgepubid00047"/>
+</navPoint>
+<navPoint id="np-49" playOrder="44">
+<navLabel>
+<text>Regstellings</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-13.htm.html#pgepubid00048"/>
+</navPoint>
+<navPoint id="np-50" playOrder="46">
+<navLabel>
+<text>Afkortings</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-13.htm.html#pgepubid00049"/>
+</navPoint>
+</navPoint>
+<navPoint id="np-51" playOrder="47">
+<navLabel>
+<text>THE FULL PROJECT GUTENBERG LICENSE</text>
+</navLabel>
+<content src="5740708827384588468_66742-h-14.htm.html#pg-footer-heading"/>
+</navPoint>
+</navMap>
+</ncx>
