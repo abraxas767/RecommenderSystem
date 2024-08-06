@@ -39,7 +39,8 @@ def get_sqlite_connection():
                             title TEXT,
                             author TEXT,
                             year DATE,
-                            content TEXT
+                            content TEXT,
+                            sim TEXT
                             )
                        ''') 
     return conn, cursor
@@ -95,6 +96,7 @@ if __name__ == "__main__":
                                 INSERT INTO corpus (id, title, author, year, content)
                                 VALUES (?, ?, ?, ?, ?)
                                    ''', (id, title, author, year, content_json))
+                    print("{} saved to db".format(id))
                     conn.commit()
                     count_saved += 1
 

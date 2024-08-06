@@ -155,5 +155,3 @@ if __name__ == "__main__":
         #result, words = tfidf(document, text_corpus, basic_tfidf_vector)
     
 
-
-
