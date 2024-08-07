@@ -11,42 +11,45 @@ def float_to_fixed_length(f, width=7, precision=7):
 
 if __name__ == "__main__":
 
+    # LOADS 4GB into memory
     print("loading all entries in memory")
     # title: "test", author: "test", content: json({word1: 29, word2: 14,....})
     conn = None
     cursor = None
+    entries = []
     try:
         conn = sqlite3.connect(SQLITE_DB_PATH)
         cursor = conn.cursor()
-        query = "SELECT * FROM corpus"
+        query = "SELECT id FROM corpus"
+        cursor.execute(query)
+        ids = cursor.fetchall()
+
+        query = "SELECT content FROM corpus"
         cursor.execute(query)
         entries = cursor.fetchall()
     except sqlite3.Error as e:
         print(e)
         sys.exit()
 
+    # LOADS ANOTHER 4GB into MEMORY
     print("fill corpus")
     preprocessed_corpus = []
-    for entry in entries:
-        content = {}
-        try:
-            content = json.loads(entry[4])
-            preprocessed_corpus.append(content)
-        except Exception as e:
-            print(e)
-            continue
+    for i in range(len(entries) - 1, -1, -1):
+        preprocessed_corpus.insert(0, json.loads(entries[i][0]))
+        del entries[i]
 
     print("generate base vector")
     basic_tfidf_vector = tfidf.get_basic_vector(preprocessed_corpus)
 
     print("creating tfidf matrix")
     tfidf_matrix = []
-    for entry in entries:
-        id = entry[0]
-        content = json.loads(entry[4])
+    for idx, entry in enumerate(entries):
+        id = ids[idx]
+        content = preprocessed_corpus[idx]
         tfidf_vector, words = tfidf.tfidf(content, preprocessed_corpus, basic_tfidf_vector)
         custom_vector = (id, tfidf_vector)
         tfidf_matrix.append(custom_vector)
+
 
     print("calculate similarites")
     for vector in tfidf_matrix:
