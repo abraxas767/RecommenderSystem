@@ -2,12 +2,22 @@ import sqlite3
 import json
 import tfidf
 import sys
+import gc
 
 SQLITE_DB_PATH = './corpus/corpus.db'
 
 def float_to_fixed_length(f, width=7, precision=7):
     formatted_str = '{:{}.{}f}'.format(f, width, precision)
     return formatted_str
+
+def load_json_in_batches(entries, batch_size=1000):
+    for i in range(0, len(entries), batch_size):
+        batch = entries[i:i+batch_size] 
+        for entry in batch:
+            tmp = json.loads(entry[0])
+            del entries[i]
+            gc.collect()
+            yield tmp
 
 if __name__ == "__main__":
 
@@ -34,9 +44,14 @@ if __name__ == "__main__":
     # LOADS ANOTHER 4GB into MEMORY
     print("fill corpus")
     preprocessed_corpus = []
-    for i in range(len(entries) - 1, -1, -1):
-        preprocessed_corpus.insert(0, json.loads(entries[i][0]))
-        del entries[i]
+    for batch in load_json_in_batches(entries):
+        preprocessed_corpus.append(batch)
+    #for i in range(len(entries) - 1, -1, -1):
+    #    #preprocessed_corpus.insert(0, json.loads(entries[i][0]))
+    #    preprocessed_corpus.append(json.loads(entries[i][0]))
+    #    del entries[i]
+
+    preprocessed_corpus.reverse()
 
     print("generate base vector")
     basic_tfidf_vector = tfidf.get_basic_vector(preprocessed_corpus)
