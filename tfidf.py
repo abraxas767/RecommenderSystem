@@ -62,8 +62,12 @@ def remove_stop_words(document: str):
             result += word + " "
     return result
 
-def convert_unicode_escape_to_utf8(document: str):
-    return document.encode('utf-8').decode('unicode_escape')
+def convert_to_ascii(text):
+    # Konvertiere den Text in Bytes mit ASCII-Encoding, ersetze nicht-ASCII-Zeichen mit einem Fragezeichen
+    ascii_bytes = text.encode('ascii', 'ignore')
+    # Konvertiere die Bytes zurück in einen String
+    ascii_text = ascii_bytes.decode('ascii')
+    return ascii_text
 
 def stem(document: str):
     ps = PorterStemmer()
@@ -84,7 +88,7 @@ def preprocess_all(text_corpus : list) -> list:
 
 def preprocess(document) -> Counter:
     document = to_lower(document)
-    document = convert_unicode_escape_to_utf8(document)
+    document = convert_to_ascii(document)
     document = remove_punctuation(document)
     document = remove_stop_words(document)
     document = stem(document)
