@@ -90,7 +90,7 @@ if __name__ == "__main__":
                     for i in book.get_items_of_type(ebook.ITEM_DOCUMENT):
                         content += extract_text_from_html(i.get_content())
                     content = dict(preprocess(content))
-                    content_json = json.dumps(content)
+                    content_json = json.dumps(content, ensure_ascii=True)
                     id = uuid.uuid4().hex
                     cursor.execute('''
                                 INSERT INTO corpus (id, title, author, year, content)
