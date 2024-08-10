@@ -1,4 +1,4 @@
-# Project Name
+# Recommder System
 
 This project implements a content-based recommendation system using the TF-IDF method. It processes a ZIM file, calculates similarities between text documents, and allows you to find similar documents for a given document.
 
