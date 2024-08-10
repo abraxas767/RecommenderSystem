@@ -3,8 +3,10 @@ import json
 import tfidf
 import sys
 import gc
+import tqdm
 
 SQLITE_DB_PATH = './corpus/corpus.db'
+FETCH = 1000
 
 def float_to_fixed_length(f, width=7, precision=7):
     formatted_str = '{:{}.{}f}'.format(f, width, precision)
@@ -13,13 +15,12 @@ def float_to_fixed_length(f, width=7, precision=7):
 if __name__ == "__main__":
 
     print("loading all entries in memory")
-    # title: "test", author: "test", content: json({word1: 29, word2: 14,....})
     conn = None
     cursor = None
     try:
         conn = sqlite3.connect(SQLITE_DB_PATH)
         cursor = conn.cursor()
-        query = "SELECT * FROM corpus"
+        query = "SELECT id, content FROM corpus LIMIT {}".format(FETCH)
         cursor.execute(query)
         entries = cursor.fetchall()
     except sqlite3.Error as e:
@@ -28,27 +29,29 @@ if __name__ == "__main__":
 
     print("fill corpus")
     preprocessed_corpus = []
-    for i in range(len(entries) - 1, -1, -1):
-        #preprocessed_corpus.insert(0, json.loads(entries[i][0]))
-        preprocessed_corpus.append(json.loads(entries[i][0]))
+    ids = []
+    for i in tqdm.tqdm(range(len(entries) - 1, -1, -1)):
+        preprocessed_corpus.append(json.loads(entries[i][1]))
+        ids.append(entries[i][0])
         del entries[i]
         gc.collect()
     preprocessed_corpus.reverse()
+    ids.reverse()
 
     print("generate base vector")
     basic_tfidf_vector = tfidf.get_basic_vector(preprocessed_corpus)
 
     print("creating tfidf matrix")
     tfidf_matrix = []
-    for entry in entries:
-        id = entry[0]
-        content = json.loads(entry[4])
+    for idx,entry in tqdm.tqdm(enumerate(preprocessed_corpus), total=len(preprocessed_corpus)):
+        id = ids[idx]
+        content = preprocessed_corpus[idx]
         tfidf_vector, words = tfidf.tfidf(content, preprocessed_corpus, basic_tfidf_vector)
         custom_vector = (id, tfidf_vector)
         tfidf_matrix.append(custom_vector)
 
     print("calculate similarites")
-    for vector in tfidf_matrix:
+    for vector in tqdm.tqdm(tfidf_matrix):
         id = vector[0]
         top1 = (0, "")
         top2 = (0, "")
@@ -88,7 +91,6 @@ if __name__ == "__main__":
         try:
             if cursor is not None and conn is not None:
                 cursor.execute(update_query, (final_string, id))
-                print("{} transformed".format(id))
                 conn.commit()
         except sqlite3.Error as e:
             print(e)

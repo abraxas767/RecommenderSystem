@@ -1,11 +1,18 @@
 import unittest
 from collections import Counter
 import numpy as np
-from tfidf import to_lower
+from tfidf import get_basic_vector, preprocess, preprocess_all, to_lower
 from tfidf import remove_punctuation
 from tfidf import tf
 from tfidf import idf
+from tfidf import tfidf
 
+test_korpus = [
+    "The CAT cat cat sat sat on the mat and the mat was blue @ 3 PM.",
+    "The dog dog dog chased the CAT, but the cat climbed the tree!!!",
+    "Birds flew over the TREE tree tree, and the DOG watched the bird...",
+    "The dog chased the CAT, but the cat climbed the tree!!!",
+    "The fish fish swam in the pond while the fish sat on the TREE at 5 PM."]
 
 class TestToLowerFunction(unittest.TestCase):
     def test_to_lower(self):
@@ -33,6 +40,11 @@ class TestTF(unittest.TestCase):
         expected_output = np.array([0.2, 0.4, 0.6, 0.8, 1.0])
         np.testing.assert_array_almost_equal(tf(input_array), expected_output)
 
+    def test_test_corpus(self):
+        b = preprocess(test_korpus[0]) 
+        expected_output = np.array([1.0, 0.6666666, 0.6666666, 0.3333333, 0.3333333])
+        np.testing.assert_array_almost_equal(tf(np.array(list(b.values()))), expected_output)
+
 
 class TestIDF(unittest.TestCase):
     def test_basic_case(self):
@@ -44,6 +56,11 @@ class TestIDF(unittest.TestCase):
         corpus = [d1, d2, d3, doc]
         expected = np.array([0.287682, 0, 0.693147,0, 0, 0, 0, 0, 1.386294])
         np.testing.assert_array_almost_equal(idf(doc, corpus, basic_vector), expected)
+
+    def test_test_corpus(self):
+        c = preprocess_all(test_korpus)
+        base = get_basic_vector(c)
+        tfidf(c[0], c, base)
 
 
 class TestTFIDF(unittest.TestCase):
